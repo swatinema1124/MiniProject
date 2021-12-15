@@ -90,7 +90,7 @@
             <p class=" d-lg-none">Log out</p>
           </a>
           <ul class=" dropdown-navbar" ngbDropdownMenu>
-            <li class=" nav-link">
+            <!-- <li class=" nav-link">
               <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                 Profile
               </a>
@@ -99,10 +99,10 @@
               <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
                 Settings
               </a>
-            </li>
-            <li class=" dropdown-divider"></li>
+            </li> -->
+            <!-- <li class=" dropdown-divider"></li> -->
             <li class=" nav-link">
-              <a class=" nav-item" href="javascript:void(0)" ngbDropdownItem>
+              <a class=" nav-item" (click)="logout()" href="javascript:void(0)" ngbDropdownItem>
                 Log out
               </a>
             </li>

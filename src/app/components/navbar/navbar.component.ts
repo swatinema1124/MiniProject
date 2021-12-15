@@ -193,4 +193,12 @@ export class NavbarComponent implements OnInit, OnDestroy {
   ngOnDestroy(){
      window.removeEventListener("resize", this.updateColor);
   }
+
+
+  logout(){
+    window.sessionStorage.clear()
+
+    this.router.navigateByUrl('/login')
+    
+  }
 }

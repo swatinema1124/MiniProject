@@ -45,9 +45,9 @@ export class LoginComponent implements OnInit {
         sessionStorage.setItem('name', res.data.name)
         sessionStorage.setItem('publicKey', res.data.publicKey)
         sessionStorage.setItem('privateKey', res.data.privateKey)
-        // setTimeout(() => {
-        //   this._router.navigateByUrl('/login')
-        // }, 3000)
+        setTimeout(() => {
+          this._router.navigateByUrl('/dashboard')
+        }, 3000)
 
       } else {
         this.successMsg = ''
